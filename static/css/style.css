@@ -1,0 +1,85 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Coustard', serif;
+   
+}
+body
+{   display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, white, grey);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wavy{
+    text-align: center;
+    position: relative;
+}
+.wavy span{
+    position: relative;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 8vw;
+    font-family: 'New Rocker', cursive;
+    font-style: bold;
+    animation: animate 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i) );
+
+}
+
+h5{
+    margin: auto;
+    padding: 30px;
+    font-size: small;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    20%
+    {
+        transform: translateY(-20px);
+    }
+    40%, 100%
+    {
+         transform: translateY(0px);  
+    }
+}
+p.subtitle{
+    font-family: 'Metal Mania', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    margin: 0;
+    padding: 30px;
+    text-align: right;
+}
+
+p
+{
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    color: #000;
+}
+a:hover
+{
+   text-shadow: 2px 2px 5px whitesmoke;
+
+}
+.row
+{
+    color: #000;
+    opacity: 80%; 
+}
+
+input{
+    padding: 5px;
+}
+
