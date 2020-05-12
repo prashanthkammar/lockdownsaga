@@ -14,6 +14,40 @@ body
     background-size: cover;
 }
 
+.wrap{
+    padding:2.5em;
+    text-align:center;
+  }
+  
+  a.button{
+    display:inline-block;
+    font-size:1.2em;
+    padding:1.2em 1.5em; 
+    font-family:"Gill Sans", sans-serif;
+    font-weight:700;
+    letter-spacing:-1px;
+    text-decoration:none;
+    margin:1.2em;
+    border:solid 2px #232323;
+    color:#232323;
+    border-radius:0.4em;
+    transition:all 0.3s linear;
+    animation-iteration-count: infinite;
+   
+  }
+   
+  a.button:hover{
+      color:#ffffff;
+      background:#232323;
+      animation:none;
+    }
+    a.button4{
+        animation-duration: 0.75s;
+        animation-name: jump;
+     }
+
+
+
 .wavy{
     text-align: center;
     position: relative;
@@ -31,8 +65,8 @@ body
 }
 
 h5{
-    margin: auto;
-    padding: 30px;
+    margin: 0;
+    padding: 25px;
     font-size: small;
     text-align: center;
     color: rgb(0, 0, 0);
@@ -43,16 +77,30 @@ h5{
     0%
     {
         transform: translateY(0px);
+        -o-transform: translateY(0px); 
+        -ms-transform: translateY(0px); 
+        -moz-transform: translateY(0px); 
+        -webkit-transform: translateY(0px);
     }
     20%
     {
         transform: translateY(-20px);
+        -o-transform: translateY(-20px); 
+        -ms-transform: translateY(-20px); 
+        -moz-transform: translateY(-20px); 
+        -webkit-transform: translateY(-20px);
     }
     40%, 100%
     {
          transform: translateY(0px);  
+         -o-transform: translateY(0px); 
+         -ms-transform: translateY(0px); 
+         -moz-transform: translateY(0px); 
+         -webkit-transform: translateY(0px); 
     }
 }
+
+
 p.subtitle{
     font-family: 'Risque', sans-serif;
     font-weight: 900;
@@ -83,3 +131,21 @@ input{
     padding: 5px;
 }
 
+@keyframes jump {
+    0% {
+      transform: scale(1,1) translate(0px, 0px);
+    }
+    
+    30%{
+      transform: scale(1,0.8) translate(0px, 8px); 
+    }
+  
+
+    75%{
+      transform: scale(1,1.1) translate(0px, -20px); 
+    }
+    
+   100% {
+      transform: scale(1,1) translate(0px, 0px);
+    }
+}     
