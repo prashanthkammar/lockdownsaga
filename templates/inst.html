@@ -1,8 +1,42 @@
 {% extends "layout.html" %}
 {% block body %}
-<p>
- <h1>Coming soon...!</h1>
+<br><br>
+ <h1 id="message" class="soon"></h1>
+ <br><br>
+ <h2 id="demo" style="justify-content: center; text-align: center; font-family: 'Metal Mania', sans-serif; color: #5b0e2d;"></h2>
+ <br> <br>
+ <div class="instructions">
+ <p class="text-left display-4" style="font-size: 2em; color: #232323;">INSTRUCTIONS</p> 
  <br>
- <h3>Instructions</h3>
-</p>
+<ul>
+    <li>The event begins at "start_time" and ends at "end_time". Responses will be accepted only within this period.</li>
+    <li>Kindly note down your login credentials so that you can login whenever asked to.</li>
+    <li>You are requested to have the registration link with you till the end of the game, since, the same link will be used to redirect to the games during the event. </li>
+    <li>The timer will not be displayed when you are playing the game. Participants should keep a track of time on their own.  </li>
+    <li>Using laptop or PC is preferred. If you are using mobile, make sure that it is in desktop mode.</li>
+</ul>
+</div>
+<script>
+    var countDownDate = new Date("May 17, 2020 1:45:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      document.getElementById("demo").innerHTML = days + " Day(s)<br>" + hours + " Hrs &nbsp;"
+      + minutes + " Min &nbsp;" + seconds + " Sec ";
+
+      document.getElementById("message").innerHTML = "Stay in the know till.....";
+    
+    
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "<a href='https://www.google.com' class='go'>Go!</a>";
+        document.getElementById("message").innerHTML = "Started...!";
+      }
+    }, 1000);
+    </script>
 {% endblock %}
