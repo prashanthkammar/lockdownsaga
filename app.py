@@ -9,11 +9,11 @@ app = Flask(__name__)
 app.secret_key = "eflwsrkmksj82398reyd0873eirds0923kjo83r7iwerwed"
 
 class RegisterForm(Form):
-    Name = StringField('Name', validators= [InputRequired()], render_kw={"placeholder":"Name","autocomplete":"off"})
-    Email = StringField('Email', validators = [InputRequired(), Email(message='Invalid email')], render_kw={"placeholder":"Email ID","autocomplete":"off"})    
-    Phone = StringField('Phone', validators = [InputRequired(),Length(min = 10, max = 13, message = 'Enter your valid mobile number')], render_kw={"placeholder":"Contact No.","type":"number","autocomplete":"off"})
-    Password = PasswordField('Password', validators = [ InputRequired(), Length(min = 6, max = 30, message = 'Password length must be atleast 6'), EqualTo('Confirm', message = "Passwords must match")], render_kw={"placeholder":"Password","autocomplete":"off"})
-    Confirm = PasswordField('Confirm Password', render_kw={"placeholder":"Confirm Password","autocomplete":"off"})
+    Name = StringField('Name', validators= [InputRequired()], render_kw={"placeholder":"Name","id":"name","autocomplete":"off"})
+    Email = StringField('Email', validators = [InputRequired(), Email(message='Invalid email')], render_kw={"placeholder":"Email ID","id":"email","autocomplete":"off"})    
+    Phone = StringField('Phone', validators = [InputRequired(),Length(min = 10, max = 13, message = 'Enter your valid mobile number')], render_kw={"placeholder":"Contact No.","type":"number","id":"phone","autocomplete":"off"})
+    Password = PasswordField('Password', validators = [ InputRequired(), Length(min = 6, max = 30, message = 'Password length must be atleast 6'), EqualTo('Confirm', message = "Passwords must match")], render_kw={"placeholder":"Password","id":"pass","autocomplete":"off"})
+    Confirm = PasswordField('Confirm Password', render_kw={"placeholder":"Confirm Password","id":"confirm","autocomplete":"off"})
 
 @app.route('/',methods=['GET'])
 def home():
