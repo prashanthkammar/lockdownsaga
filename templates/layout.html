@@ -21,6 +21,8 @@
       }
       .error{
         color: red;
+        font-size: x-small;
+       
       }
 
       input{
@@ -37,15 +39,16 @@
       }
 
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600&display=swap" rel="stylesheet">
+  <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Belgrano&family=Berkshire+Swash&family=Emilys+Candy&family=Kotta+One&family=Montserrat+Subrayada:wght@700&family=Nova+Cut&family=Nova+Script&family=Philosopher:wght@700&family=Salsa&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Coustard|Kavoon|Metal+Mania|Nova+Cut|Risque|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coustard&family=Ubuntu&family=Varela+Round&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|New+Rocker|Slackey&display=swap" rel="stylesheet">  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Amita:wght@700&family=Berkshire+Swash&family=Fontdiner+Swanky&family=Gorditas&family=Inknut+Antiqua&family=Leckerli+One&family=Lily+Script+One&family=Marko+One&family=Milonga&family=New+Rocker&family=Norican&family=Oleo+Script+Swash+Caps&family=PT+Serif+Caption&family=Rochester&family=Slackey&family=Sofia&display=swap" rel="stylesheet">
+  </head>
 <body>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a style="font-family: 'Inknut Antiqua', serif;" class="navbar-brand text-dark" href="{{url_for('home')}}">UCSP</a>
+        <a style="font-family: 'Inknut Antiqua', serif; font-weight: bold;" class="navbar-brand text-dark" href="{{url_for('home')}}">UCSP</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,14 +56,14 @@
         <div class="collapse navbar-collapse w-100 order-3" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="mr-3 nav-link text-dark" href="{{url_for('home')}}">Home</a>
+              <a  style="font-family: 'PT Serif Caption', serif; font-weight: bold;" class="mr-3 nav-link text-dark" href="{{url_for('home')}}">Home</a>
             </li>
 
             <li class="nav-item">
-              <a class="mr-3 nav-link text-dark" href="{{url_for('about')}}">About us</a>
+              <a  style="font-family: 'PT Serif Caption', serif; font-weight: bold;" class="mr-3 nav-link text-dark" href="{{url_for('about')}}">About us</a>
             </li>
               <li class="nav-item">
-                <a class="mr-3 nav-link text-dark" href="{{url_for('register')}}">Register</a>
+                <a style="font-family: 'PT Serif Caption', serif; font-weight: bold;" class="mr-3 nav-link text-dark" href="{{url_for('register')}}">Register</a>
               </li>
               
           </form>

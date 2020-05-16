@@ -1,3 +1,4 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 *
 {
     margin: 0;
@@ -233,4 +234,55 @@ a.go:after{
 }
 a.go:hover:after{
     left:210px;
+}
+
+.box{
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 4px;
+    background: rgba(0,0,0,1) ;
+    opacity: 80%;
+}
+
+#name, #email, #phone, #pass, #confirm{
+    justify-items: center;
+    width:100%;
+    color: #fff;
+    position: relative;
+    font-family: 'Milonga', cursive;
+    margin: auto;
+    padding-left:30px;
+    padding-right: 20px;
+    background: inherit;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:solid 2px #fff;
+    outline: 0px !important;
+    -webkit-appearance: none !important;
+    box-shadow: none !important;
+    
+
+}
+
+input[name="Submit"] {
+  width: fit-content;
+  color: white;
+  text-decoration: none;
+  font-family: 'Milonga', cursive;
+  padding: 6px 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+} 
+
+ 
+.form-group i{
+  position: absolute;
+  padding-top: 10px;
 }
