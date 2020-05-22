@@ -13,11 +13,12 @@
     <li>Kindly note down your login credentials so that you can login whenever asked to.</li>
     <li>You are requested to have the registration link with you till the end of the game, since, the same link will be used to redirect to the games during the event. </li>
     <li>The timer will not be displayed when you are playing the game. Participants should keep a track of time on their own.  </li>
+    <li>Scores are considered only if you successfully reach the end of the game. </li>
     <li>Using laptop or PC is preferred. If you are using mobile, make sure that it is in desktop mode.</li>
 </ul>
 </div>
 <script>
-    var countDownDate = new Date("May 17, 2020 1:25:00").getTime();
+    var countDownDate = new Date("May 22, 2020 17:10:00").getTime();
     var x = setInterval(function() {
       var now = new Date().getTime();
       var distance = countDownDate - now;
@@ -34,7 +35,7 @@
     
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "<a href='https://www.google.com' class='go'>Go!</a>";
+        document.getElementById("demo").innerHTML = "<a href='https://forms.gle/JYA8gR7a3cGMQRpf7' class='go'>Go!</a>";
         document.getElementById("message").innerHTML = "And the wait is over.......";
       }
     }, 1000);
