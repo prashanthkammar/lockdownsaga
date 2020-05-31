@@ -34,17 +34,11 @@ def register():
                 'confirm_password':form.Confirm.data
                 
             }
-        data = {
-            'name':form.Name.data,
-            'email':form.Email.data,
-            'password':form.Password.data,
-            'returnSecureToken': True
 
-        }
  
         session=requests.Session()
         session.post('https://ucsp-quiz.herokuapp.com/register',data=payload)
-        session.post('https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyDpKtHKmbF-Ctvyno1OtpoJJOktnrCx8g4',data=data)
+        session.post('https://ucsp-imagineering.herokuapp.com/register',data=payload)
         flash(" Dear {}, your registration was successful!".format(form.Name.data),"message") 
         return redirect(url_for('inst'))
 
