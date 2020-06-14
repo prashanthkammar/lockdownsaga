@@ -39,6 +39,7 @@ def register():
         session=requests.Session()
         session.post('https://ucsp-quiz.herokuapp.com/register',data=payload)
         session.post('https://ucsp-imagineering.herokuapp.com/register',data=payload)
+        session.post('https://ucsp-constrainedchaos.herokuapp.com/register',data=payload)
         flash(" Dear {}, your registration was successful!".format(form.Name.data),"message") 
         return redirect(url_for('inst'))
 
